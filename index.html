@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>The personal identity code</title>
+
+    <!-- css -->
+    <link href="style.css" rel="stylesheet">
+</head>
+<body>
+
+    <div class="main-page">
+            <!-- nav bar -->
+            <div class="navbar">
+                <a href="index.html"><img src="https://dvv.fi/documents/16079645/16452557/section-info-en.png/" width="200px"></a>
+                <nav>
+                    <ul id="menu-items">
+                        <li><button class="checkbutton" onclick="window.open('https://dvv.fi/en/personal-identity-code','_blank')">What is personal identity code?</button></li>
+                       <!-- backup buttons
+                        <li><button class="checkbtn" onclick="document.getElementById('check-form').style.display='block' "style=" width:auto;">Check personal ID</button></li>
+                        <li><button class="createbtn" onclick="document.getElementById('create-form').style.display='block' "style=" width:auto;">Create personal ID</button></li>
+                       -->
+                    </ul>
+                </nav>
+            </div>
+            <div id='check-form'class='check-page'>
+                <div class="form-box">
+                    <div class='button-box'>
+                        <div id='btn'></div>
+                            <button type='button' onclick='check()'class='toggle-btn' >checkID</button>
+                            <button type='button' onclick='create()' class='toggle-btn'>createID</button>
+                    </div>
+                        <!-- check form -->
+                        <form id='check' class='input-group-check'>
+                            <input type='text' class='input-field' id='check-input' placeholder='ddmmyy+/-individual number' required>
+                            <button type='button' class='submit-btn' id="check-btn">CHECK</button>
+                            <h4 id="check-output"></h4>
+                        </form>
+                    
+                        <!-- create form-->
+                        <form id='create' class='input-group-create'>
+                            <input type='text' class='input-field' id='create-input' placeholder='ddmmyy+/-individual number' required>
+                            <button type='button' class='submit-btn' id="create-btn">CREATE</button>
+                            <h4 id="create-output"></h4>
+                        </form>
+                </div>
+            </div>
+
+            <footer>
+                <div class="footer-bottom">
+                    <p>LAB UNIVERSITY OF APPLIED SCIENCES. designed by <span>wendy</span></p>
+                </div>
+            </footer>
+    </div>
+    
+
+    <script src="index.js"></script>
+
+    <!---- switch bwteen toggle btns-->
+    <script>
+        var x=document.getElementById('check');
+		var y=document.getElementById('create');
+		var z=document.getElementById('btn');
+		function create()
+		{
+			x.style.left='-400px';
+			y.style.left='50px';
+			z.style.left='110px';
+		}
+		function check()
+		{
+			x.style.left='50px';
+			y.style.left='450px';
+			z.style.left='0px';
+		}
+	</script>
+
+
+</body>
+</html>
