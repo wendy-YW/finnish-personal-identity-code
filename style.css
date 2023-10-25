@@ -192,14 +192,19 @@ nav ul li a:hover{
 
 
 /* footer */
+html,body {
+  height: 100vh;
+}
+body>footer {
+  position: sticky;
+  top: 100vh;
+}
 .footer-bottom{
 	background: #003479;
 	width: 100vw;
    	 margin-top: 80px;
 	padding: 20px 0;
 	text-align: center;
-	 position: sticky;
-  	top: 100vh;
 }
 
 .footer-bottom p{
