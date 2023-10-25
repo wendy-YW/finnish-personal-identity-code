@@ -195,9 +195,11 @@ nav ul li a:hover{
 .footer-bottom{
 	background: #003479;
 	width: 100vw;
-    margin-top: 80px;
+   	 margin-top: 80px;
 	padding: 20px 0;
 	text-align: center;
+	 position: sticky;
+  	top: 100vh;
 }
 
 .footer-bottom p{
